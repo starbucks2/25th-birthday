@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 25th Birthday 🍵</title>
+    <!-- Tailwind CSS v4 -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&family=Quicksand:wght@300;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary-matcha: #88A973;
+            --color-soft-matcha: #A5B782;
+            --color-pastel-matcha: #DDE5CC;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 font-['Poppins'] overflow-x-hidden antialiased bg-gray-900 text-gray-100">
+    <!-- Animated background using Tailwind + CSS -->
+    <div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_center,_#1f2937_0%,_#030712_100%)]"
+        id="background-container"></div>
+
+    <!-- Welcome Overlay Removed in favor of SweetAlert2 -->
+
+    <!-- Main Content -->
+    <main class="content-wrapper hidden opacity-0 transition-opacity duration-1000 px-4 md:px-8 pt-16 pb-10 max-w-6xl mx-auto"
+        id="main-content">
+        <header class="text-center mb-10 md:mb-16">
+            <h1
+                class="elegant-title text-4xl md:text-6xl font-['Dancing_Script'] text-white font-bold mb-6 md:mb-10 animate-glow leading-snug px-2">
+                Happy 25th Birthday to My Girlbestfriend 🍵
+            </h1>
+            <div
+                class="animate-fadeInUp max-w-3xl mx-auto bg-gray-800/40 backdrop-blur-lg p-6 md:p-10 rounded-3xl shadow-xl border-l-8 border-primary-matcha">
+                <p class="heartfelt-message text-lg md:text-xl italic leading-relaxed text-gray-300">
+                    “Happy 25th Birthday! A quarter of a century down, and you’re only getting more amazing. You’re not just my girlbestfriend you’re my safe place, my happiness on bad days, and the reason behind so many genuine smiles. Thank you for always being there. Here's to more memories, laughter, and endless joy. I’m incredibly lucky to have you in my life. Cheers to 25 beautiful years! 💚”
+                </p>
+            </div>
+        </header>
+
+        <!-- Carousel Section -->
+        <section class="relative h-[350px] md:h-[650px] flex items-center justify-center mb-10 md:mb-16 px-2 overflow-hidden">
+            <div class="carousel-container relative w-full max-w-[95%] md:max-w-[750px] h-full flex items-center justify-center mx-auto"
+                id="carousel-container">
+                <!-- Randomly injected images by JS -->
+            </div>
+        </section>
+
+        <!-- Dynamic Message Footer -->
+        <footer class="text-center pb-10">
+            <p id="dynamic-message"
+                class="text-gray-200 text-3xl md:text-4xl font-['Dancing_Script'] transition-opacity duration-500 min-h-[50px] px-4">
+                Made with Love for my Girlbestfriend 🌿
+            </p>
+        </footer>
+    </main>
+
+    <!-- End Screen -->
+    <div class="end-screen fixed inset-0 z-[3000] hidden flex-col items-center justify-center bg-[radial-gradient(circle_at_center,_#1f2937_0%,_#030712_100%)] transition-opacity duration-1000"
+        id="end-screen">
+        <div
+            class="end-card text-center p-10 md:p-16 bg-gray-800/40 backdrop-blur-xl rounded-[40px] shadow-2xl border border-gray-600/30 animate-zoomIn mx-4">
+            <h1 class="text-4xl md:text-6xl font-['Dancing_Script'] text-white font-bold animate-glow mb-6">I Love You, My
+                Girlbestfriend! 💚</h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-md">Thank you for being part of my life. Always.</p>
+            <button onclick="location.reload()"
+                class="bg-primary-matcha text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-110 transition-transform shadow-xl">
+                Watch Again ✨
+            </button>
+        </div>
+    </div>
+
+    <audio id="bg-music">
+        <source src="assets/music/Birthday Katy Perry CHORUS part - CHORUS CHANNEL (128k).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
